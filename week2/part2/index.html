@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Part 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
   <body>
-    <h1>part 2</h1>
+    <h1>Part 2</h1>
+    <h3></h3>
+
+    <div class="container">
+      <div class="item" id="item1">
+        <div class="inside">
+          <h4>Control panel</h4>
+          <form class="input-container">
+            <label>Length:</label><input id="length" type="number" /><input
+              id="submitLength"
+              type="submit"
+            />
+          </form>
+          <button class="button" id="forward">Forward</button><br />
+          <button class="button">Left</button>
+          <button class="button" style="color: red;">STOP</button
+          ><button class="button">Right</button><br />
+          <button class="button">Backward</button>
+        </div>
+      </div>
+      <div class="item" id="item2">
+        <h4>Map</h4>
+        <canvas id="canvas" width="600" height="550"></canvas>
+      </div>
+      <div class="item"></div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

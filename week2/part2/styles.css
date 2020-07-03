@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: #071a52;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.item {
+  width: 650px;
+  height: 650px;
+  background-color: #f0f0f0;
+  border-radius: 2em;
+  overflow: auto;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  margin: 5px;
+  top: 80px;
+}
+
+.inside {
+  margin-top: 165px;
+}
+
+#canvas {
+  border: 1px solid;
+}
+
+.button {
+  width: 124px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #364f6b;
+  color: #f0f0f0;
+  outline: none;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.button:active {
+  background-color: #43dde6;
+}
+
+label {
+  font-weight: bold;
+  color: #fc5185;
+  margin: 5px;
+}
+
+input {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+}
+
+.input-container {
+  margin: 10px;
+}
