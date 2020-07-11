@@ -57,8 +57,6 @@ function sendQuery($conection, $sql){
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -70,44 +68,79 @@ function sendQuery($conection, $sql){
   </head>
   <body>
     <h1>Part 1</h1>
-    <h3>objective: on button click store movement in database and update control.php</h3>
+    <h3>
+      objective: on button click store movement in database and update
+      control.php
+    </h3>
     <div class="container">
-      
       <div class="item" id="item1">
         <h4>Control panel</h4>
         <form method="post">
-          <input class="button" type="submit" name="forward" id="forward" value="Forward" /><br/>
+          <input
+            class="button"
+            type="submit"
+            name="forward"
+            id="forward"
+            value="Forward"
+          /><br />
           <div>
-            <input class="button" type="submit" name="left" id="left" value="Left" />
-            <input class="button" style="color: red;" type="submit" name="stop" id="stop" value="STOP" />
-            <input class="button" type="submit" name="right" id="right" value="Right" />
-          </div>   
-          <input class="button" type="submit" name="backward" id="backward" value="Backward" /><br/>
+            <input
+              class="button"
+              type="submit"
+              name="left"
+              id="left"
+              value="Left"
+            />
+            <input
+              class="button"
+              style="color: red;"
+              type="submit"
+              name="stop"
+              id="stop"
+              value="STOP"
+            />
+            <input
+              class="button"
+              type="submit"
+              name="right"
+              id="right"
+              value="Right"
+            />
+          </div>
+          <input
+            class="button"
+            type="submit"
+            name="backward"
+            id="backward"
+            value="Backward"
+          /><br />
         </form>
+        <h4>
+          *clicking buttons gives '405 Not Allowed' because database is not
+          hosted
+        </h4>
       </div>
 
       <div class="item" id="item2">
         <h4>control.php screenshot after clicking forward</h4>
-        <img src="./images/control.jpg" alt="control.php screentshot">
+        <img src="./images/control.jpg" alt="control.php screentshot" />
       </div>
 
       <div class="item">
         <h4>Database screenshot</h4>
-          <img src="./images/db.jpg" alt="database screentshot">
-          <img src="./images/db2.jpg" alt="database screentshot">
+        <img src="./images/db.jpg" alt="database screentshot" />
+        <img src="./images/db2.jpg" alt="database screentshot" />
       </div>
-      
+
       <div class="item">
         <h4>control.php code</h4>
         <script src="https://gist.github.com/maryamradd/6d1ce1358a75d08b1b9b1b7c2c91e8bf.js"></script>
       </div>
-      
+
       <div class="item">
         <h4>index.php code</h4>
         <script src="https://gist.github.com/maryamradd/301cf8d351a0889cadf0e60d63a775f8.js"></script>
       </div>
-      
     </div>
   </body>
 </html>
-
