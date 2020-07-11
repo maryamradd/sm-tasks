@@ -5,51 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>UI buttons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  </head>
   <style>
-    .single-row {
-        margin-left: 124px;
+    div {
+      text-align: center;
     }
-    
+
     .center {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -50px;
-        margin-left: -100px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      margin-left: -100px;
     }
-    
+
     .button {
-        width: 124px;
-        height: 36px;
-        border-radius:0.2px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
+      width: 124px;
+      height: 36px;
+      border-radius: 0.2px;
+      margin: 3px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
     }
-    
+
+    .button:active {
+      background-color: #4592af;
+    }
+
+    @media (min-width: 320px) {
+      .button {
+        width: 100px;
+      }
+      .center {
+        margin-left: -150px;
+      }
+    }
   </style>
 
   <body>
     <div class="center">
-      <div class="single-row">
-        <button class="button">
-          Forward
-        </button>
-      </div>
-      <div class="row">
-        <button class="button">
-          Left</button
-        ><button style="color:red" class=" button">
-          STOP</button
-        ><button class="button">
-          Right
-        </button>
-      </div>
-      <div class="single-row">
-        <button class="button">
-          Backwards
-        </button>
-      </div>
+      <button class="button">
+        Forward</button
+      ><br />
+
+      <button class="button">
+        Left</button
+      ><button style="color: red;" class="button">
+        STOP</button
+      ><button class="button">
+        Right</button
+      ><br />
+
+      <button class="button">
+        Backwards
+      </button>
     </div>
   </body>
 </html>
