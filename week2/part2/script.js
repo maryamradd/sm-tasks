@@ -9,7 +9,7 @@ function map() {
   var directions = document.getElementsByName("direction");
   length = parseInt(document.getElementById("length").value, 10);
   direction = getDirection(directions);
-  if (direction == undefined || length == undefined) {
+  if (direction == undefined || isNaN(length)) {
     document.getElementById("alert").style.color = "#d72323";
     document.getElementById("alert").innerHTML =
       "you must enter length and choose direction";
