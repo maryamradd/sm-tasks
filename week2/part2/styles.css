@@ -28,29 +28,98 @@ body {
 }
 
 .inside {
-  margin-top: 165px;
+  margin-top: 80px;
 }
 
 #canvas {
   border: 1px solid;
 }
 
-.button {
-  width: 124px;
-  height: 36px;
-  border-radius: 10px;
-  background-color: #364f6b;
-  color: #f0f0f0;
-  outline: none;
-  font-weight: bold;
+.radio-container {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.r-container {
+  border: 1px solid #1f4287;
+  border-radius: 5px;
   margin: 3px;
+  position: relative;
+  padding: 5px 15px 5px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.r-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 5;
+  left: 0;
+  margin-left: 3px;
+  height: 25px;
+  width: 25px;
+  background-color: #dee1ec;
+  border-radius: 50%;
+}
+
+.r-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.r-container input:checked ~ .checkmark {
+  background-color: #fc5185;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.r-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.r-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.button {
+  font-size: 16px;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 5px 15px;
+  margin: 3px;
+  outline: none;
+}
+
+#saveBtn {
+  border-color: #2cb978;
+  color: #2cb978;
+}
+
+#deleteBtn {
+  border-color: #d72323;
+  color: #d72323;
 }
 
 .button:active {
-  background-color: #43dde6;
+  background-color: #46c3db;
 }
 
-label {
+.label {
   font-weight: bold;
   color: #fc5185;
   margin: 5px;
@@ -65,4 +134,22 @@ input {
 
 .input-container {
   margin: 10px;
+}
+
+#alert {
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 500px;
+  margin-left: 70px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #dee1ec;
 }

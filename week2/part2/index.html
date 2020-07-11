@@ -13,26 +13,88 @@
 
     <div class="container">
       <div class="item" id="item1">
+        <h4>Control panel</h4>
         <div class="inside">
-          <h4>Control panel</h4>
-          <form class="input-container">
-            <label>Length:</label><input id="length" type="number" /><input
-              id="submitLength"
-              type="submit"
-            />
-          </form>
-          <button class="button" id="forward">Forward</button><br />
-          <button class="button">Left</button>
-          <button class="button" style="color: red;">STOP</button
-          ><button class="button">Right</button><br />
-          <button class="button">Backward</button>
+          <h4>Enter Length</h4>
+          <label class="label">Length:</label
+          ><input id="length" type="number" placeholder="50" />
+          <div>
+            <h4>Choose direction</h4>
+            <div class="radio-container">
+              <label class="r-container" for="go_left"
+                >Left
+                <input
+                  type="radio"
+                  id="go_left"
+                  name="direction"
+                  value="left"
+                />
+
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="r-container" for="go_forward">
+                Forward<input
+                  type="radio"
+                  id="go_forward"
+                  name="direction"
+                  value="forward"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="r-container" for="go_backward">
+                Backward<input
+                  type="radio"
+                  id="go_backward"
+                  name="direction"
+                  value="backward"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="r-container" for="go_right">
+                Right
+                <input
+                  type="radio"
+                  id="go_right"
+                  name="direction"
+                  value="right"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <button onclick="saveToTable();" class="button" id="saveBtn">
+            Save
+          </button>
+          <button class="button" onclick="map();">Start</button>
+          <button class="button" id="deleteBtn" onclick="deleteAll();">
+            Delete
+          </button>
+          <div id="alert"></div>
         </div>
       </div>
       <div class="item" id="item2">
         <h4>Map</h4>
         <canvas id="canvas" width="600" height="550"></canvas>
       </div>
-      <div class="item"></div>
+      <div class="item">
+        <h4>Database</h4>
+        <div>
+          <table id="db">
+            <thead>
+              <tr>
+                <th>X</th>
+                <th>Y</th>
+                <th>Length</th>
+                <th>Direction</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyId"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
