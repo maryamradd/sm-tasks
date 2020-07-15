@@ -7,11 +7,31 @@ body {
   color: #071a52;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+h3 {
+  font-weight: 500;
+}
+
+.nav-bar {
+  margin-left: -500px;
+  margin-top: -100px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #4592af;
+  transition: ease-out;
+  transition-duration: 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #083358;
+}
 
 .container {
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
   vertical-align: middle;
 }
 .item {

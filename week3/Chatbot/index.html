@@ -17,15 +17,37 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    h3 {
+      font-weight: 500;
+    }
+
+    .nav-bar {
+      margin-left: -500px;
+      margin-top: -100px;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #4592af;
+      transition: ease-out;
+      transition-duration: 0.3s;
+    }
+
+    .nav-bar a:hover {
+      color: #083358;
+    }
+
     .container {
       text-align: center;
       align-items: center;
       justify-content: center;
+      margin-top: 100px;
       vertical-align: middle;
     }
+
     .item {
       width: 650px;
-      height: 800px;
+      height: 650px;
       background-color: #f0f0f0;
       border-radius: 2em;
       overflow: auto;
@@ -37,30 +59,30 @@
     }
 
     #item1 img {
-      max-width: 150px;
+      max-width: 200px;
+      margin-top: 30px;
     }
     #item1 img:hover {
-      opacity: 0.5;
-    }
-    h3 {
-      font-weight: 500;
-    }
-    p {
-      margin-top: 250px;
-      margin-bottom: -5px;
+      opacity: 0.6;
     }
     #item2 img {
-      margin-top: 70px;
+      margin-top: 20px;
+    }
+    p {
+      margin-top: 140px;
     }
   </style>
   <body>
     <body>
       <h1>Task 1</h1>
       <h3>
-        📝 use voice recognition to detect user input<br />
-        then reply using text to speech.
+        📝 use voice recognition to detect user input then reply using text to
+        speech.
       </h3>
-
+      <div class="nav-bar">
+        <a href="../../index.html">home</a> »
+        <a href="/week3/index.html">Week 3</a>
+      </div>
       <div class="container">
         <div class="item" id="item1">
           <h4>Code</h4>
@@ -68,9 +90,7 @@
           <a
             target="_blank"
             href="https://github.com/maryamradd/sm-tasks/tree/master/week3/Chatbot/SpeechRecognition"
-            ><img
-              src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5347-github_102542.png"
-            />
+            ><img src="/public/github-logo.png" />
           </a>
         </div>
         <div class="item" id="item2">

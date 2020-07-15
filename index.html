@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>S-M Training tasks</title>
+    <title>SmartMethods Learning tasks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="outer">
+      <div class="nav-bar">
+        <a href="../../index.html">..</a>
+      </div>
+
       <div class="inner">
         <h1>Tasks</h1>
         <h2><a class="link" href="week1/index.html">Week 1 Tasks</a></h2>
@@ -17,9 +21,7 @@
       <div class="inner">
         <h3>Source Code:</h3>
         <a target="_blank" href="https://github.com/maryamradd/sm-tasks/"
-          ><img
-            src="https://www.cloudsavvyit.com/thumbcache/0/0/85f60b663104f044ba4840ed62faeefe/p/uploads/2019/10/ba9a7cbd.png"
-            alt="github logo"
+          ><img src="/public/github-logo.png" alt="github logo"
         /></a>
       </div>
       <div class="inner">
@@ -30,12 +32,6 @@
 </html>
 
 <style>
-  .inner {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 10px;
-  }
-
   .outer {
     position: absolute;
     top: 5%;
@@ -47,14 +43,34 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  img {
-    object-fit: cover;
-    width: 228px;
-    height: 88px;
+  .inner {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
   }
 
+  .nav-bar {
+    margin-left: -500px;
+    margin-top: 50px;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+    color: #4592af;
+    transition: ease-out;
+    transition-duration: 0.3s;
+  }
+
+  .nav-bar a:hover {
+    color: #083358;
+  }
+
+  img {
+    max-width: 200px;
+  }
   img:hover {
     opacity: 0.6;
+    outline: none;
   }
 
   h2 {

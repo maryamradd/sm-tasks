@@ -10,13 +10,37 @@
     div {
       text-align: center;
     }
+    .outer {
+      position: absolute;
+      top: 5%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-    .center {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      margin-top: -50px;
-      margin-left: -100px;
+    .inner {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+
+    .nav-bar {
+      margin-left: -500px;
+      margin-top: 50px;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #4592af;
+      transition: ease-out;
+      transition-duration: 0.3s;
+    }
+
+    .nav-bar a:hover {
+      color: #083358;
     }
 
     .button {
@@ -43,22 +67,29 @@
   </style>
 
   <body>
-    <div class="center">
-      <button class="button">
-        Forward</button
-      ><br />
+    <div class="outer">
+      <div class="nav-bar">
+        <a href="../../index.html">home</a>
+      </div>
+      <h1>Task 1</h1>
+      <h3></h3>
+      <div class="inner">
+        <button class="button">
+          Forward</button
+        ><br />
 
-      <button class="button">
-        Left</button
-      ><button style="color: red;" class="button">
-        STOP</button
-      ><button class="button">
-        Right</button
-      ><br />
+        <button class="button">
+          Left</button
+        ><button style="color: red;" class="button">
+          STOP</button
+        ><button class="button">
+          Right</button
+        ><br />
 
-      <button class="button">
-        Backwards
-      </button>
+        <button class="button">
+          Backwards
+        </button>
+      </div>
     </div>
   </body>
 </html>
